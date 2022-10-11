@@ -82,7 +82,7 @@ class LoginPage extends Component {
             this.loginForm = form;
           }}
         >
-          <Tab key="account" tab="账户密码登录123">
+          <Tab key="account" tab="测试账户密码登录123">
             {login.status === 'error' &&
               login.type === 'account' &&
               !submitting &&

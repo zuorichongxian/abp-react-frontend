@@ -31,6 +31,7 @@
     "docker:push": "npm run docker-hub:build && npm run docker:tag && docker push chenshuai2144/ant-design-pro"
   },
   "dependencies": {
+    "@ant-design/charts": "^1.4.2",
     "@antv/data-set": "^0.10.0",
     "@babel/runtime": "^7.2.0",
     "@icon-park/react": "^1.4.2",
@@ -75,8 +76,10 @@
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",
     "react-fittext": "^1.0.0",
+    "react-image-crop": "^10.0.8",
     "react-leaflet": "^2.2.0",
-    "react-media": "^1.8.0",
+    "react-media": "^1.10.0",
+    "react-responsive": "^9.0.0",
     "react-router-cache-route": "^1.12.11",
     "react-router-dom": "^4.3.1",
     "react-use": "^17.4.0",

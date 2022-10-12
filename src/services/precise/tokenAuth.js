@@ -2,7 +2,7 @@ import request from '@/utils/request';
 import appConsts from '@/utils/appconst'
 
 export async function Authenticate(params) {
-    return request(appConsts.remoteServiceBaseUrl + "api/TokenAuth/Authenticate",
+    return request(appConsts.remoteServiceBaseUrl + "api/TokenAuth/Authenticate1",
         { method: 'POST', body: params },
     );
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import { notification, Button, message } from 'antd';
 import { formatMessage } from 'umi/locale';
 import '@icon-park/react/styles/index.less';
-
+import dayjs from 'dayjs'
+import "tailwindcss/tailwind.css"
 
 // Notify user if offline now
 window.addEventListener('sw.offline', () => {

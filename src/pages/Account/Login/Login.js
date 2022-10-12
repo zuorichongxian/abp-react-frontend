@@ -5,7 +5,7 @@ import Link from 'umi/link';
 import { Checkbox, Alert, Icon } from 'antd';
 import Login from '@/components/Login';
 import styles from './Login.less';
-import {Home} from '@icon-park/react';
+import {Home,DeleteTwo} from '@icon-park/react';
 //
 const { Tab, UserName, Password, Mobile, Captcha, Submit } = Login;
 
@@ -74,10 +74,7 @@ class LoginPage extends Component {
     const { login, submitting } = this.props;
     const { type, rememberClient } = this.state;
     return (
-      <div className={styles.main}>
-        123
-        <Home/>
-<Home theme="filled"/>
+      <div className={styles.main} >
         <Login
           defaultActiveKey={type}
           onTabChange={this.onTabChange}

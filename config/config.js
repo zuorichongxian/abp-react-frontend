@@ -6,8 +6,11 @@ import defaultSettings from '../src/defaultSettings';
 import slash from 'slash2';
 
 const plugins = [
+ 
+ 
   [
     'umi-plugin-react',
+   
     {
       antd: true,
       dva: {
@@ -53,6 +56,7 @@ if (process.env.APP_TYPE === 'site') {
 
 export default {
   // add for transfer to umi
+  extraPostCSSPlugins: [require("tailwindcss"), require("autoprefixer")],
   plugins,
   define: {
     APP_TYPE: process.env.APP_TYPE || '',

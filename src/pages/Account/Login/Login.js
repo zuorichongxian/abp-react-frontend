@@ -6,6 +6,7 @@ import { Checkbox, Alert, Icon } from 'antd';
 import Login from '@/components/Login';
 import styles from './Login.less';
 import {Home,DeleteTwo} from '@icon-park/react';
+import Test from './test.tsx'
 //
 const { Tab, UserName, Password, Mobile, Captcha, Submit } = Login;
 
@@ -75,6 +76,7 @@ class LoginPage extends Component {
     const { type, rememberClient } = this.state;
     return (
       <div className={styles.main} >
+        <Test/>
         <Login
           defaultActiveKey={type}
           onTabChange={this.onTabChange}
@@ -83,7 +85,7 @@ class LoginPage extends Component {
             this.loginForm = form;
           }}
         >
-          <Tab key="account" tab="测试账户密码登录123">
+          <Tab key="account" tab="账户密码登录">
             {login.status === 'error' &&
               login.type === 'account' &&
               !submitting &&
